@@ -69,11 +69,15 @@ export const BannerHome = () => {
 
         {/* === ILUSTRACIÓN + FORMA DETRÁS === */}
         <div className="md:w-1/2 flex justify-center md:justify-end mb-8 md:mb-0">
-          <div className="relative h-140">
+          <div className="relative h-140 w-80">
+            <div
+              className="absolute left-[-10px] top-64 w-[800px] h-[70vh] bg-white/60 backdrop-blur-md rounded-lg -z-10 transform -translate-y-1/2 drop-shadow-lg"
+              aria-hidden="true"
+            />
             <img
-              src="/img/man.png"
+              src="/img/mobile.png"
               alt="man"
-              className="relative z-10 h-full object-contain"
+              className="relative z-10 h-full object-contain filter drop-shadow-lg right-30"
             />
           </div>
         </div>

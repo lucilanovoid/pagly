@@ -8,7 +8,7 @@ export const Header = () => {
 
   return (
     <header className="absolute top-0 left-0 w-full z-20">
-      <div className="w-[85%] max-w-[1600px] m-auto pt-6 flex items-center justify-between px-3 md:px-10">
+      <div className="w-[85%] max-w-[1600px] m-auto pt-8 flex items-center justify-between">
         {/* === DESKTOP === */}
         <div className="hidden md:flex items-center justify-between w-full">
           <div
@@ -18,7 +18,7 @@ export const Header = () => {
             <img
               src="./img/Pagly_White-LOGO.svg"
               alt="Logo Pagly"
-              className="h-14 w-auto"
+              className="h-20 w-auto"
             />
           </div>
           <a

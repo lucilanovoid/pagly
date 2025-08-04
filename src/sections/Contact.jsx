@@ -10,6 +10,7 @@ export const Contact = () => {
         bg-[length:100%_100%] bg-no-repeat bg-center
         flex items-center justify-between
         px-4 gap-[100px]
+        bg-white 
 
 
       "

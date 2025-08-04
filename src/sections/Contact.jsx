@@ -5,11 +5,13 @@ export const Contact = () => {
     <section
       id="contacto"
       className="
-          w-screen h-screen 
+        w-screen h-screen 
         bg-[url('/img/map.png')]
         bg-[length:100%_100%] bg-no-repeat bg-center
         flex items-center justify-between
         px-4 gap-[100px]
+
+
       "
     >
       <div className="w-[85%] max-w-[1600px] m-auto flex items-center justify-between">

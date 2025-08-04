@@ -29,12 +29,286 @@ html {
   font-variant-numeric: lining-nums;
 }
 
-.shape-grain-overlay {
-  position: absolute;
-  inset: 0;
-  bottom: 0;
-  height: 90%;
-  background: url("/img/noisy-background.png") center center / cover no-repeat;
-  opacity: 0.1;
-  pointer-events: none;
+.gradient-animation {
+background: radial-gradient(100% 100% at var(--70-x-position) var(--70-y-position), #acb1f1 0%, transparent),radial-gradient(100% 100% at var(--71-x-position) var(--71-y-position), #5371e9 0%, transparent),radial-gradient(100% 100% at var(--72-x-position) var(--72-y-position), #daff5e 0%, transparent),radial-gradient(100% 100% at var(--73-x-position) var(--73-y-position), #115835 20%, transparent),#1b253b;
+animation-name: main;
+animation-iteration-count: infinite;
+animation-duration: 7s;
+transition-timing-function: ease-in
 }
+
+@property --70-x-position { syntax: '<percentage>'; inherits: false; initial-value: 26.4453125%; }
+
+@property --70-y-position { syntax: '<percentage>'; inherits: false; initial-value: 83.90625%; }
+
+@property --71-x-position { syntax: '<percentage>'; inherits: false; initial-value: 76.875%; }
+
+@property --71-y-position { syntax: '<percentage>'; inherits: false; initial-value: 84.4921875%; }
+
+@property --72-x-position { syntax: '<percentage>'; inherits: false; initial-value: 76.2890625%; }
+
+@property --72-y-position { syntax: '<percentage>'; inherits: false; initial-value: 27.031249999999996%; }
+
+@property --73-x-position { syntax: '<percentage>'; inherits: false; initial-value: 26.289062500000004%; }
+
+@property --73-y-position { syntax: '<percentage>'; inherits: false; initial-value: 27.851562500000004%; }
+
+
+:root {
+
+--6-x-position: 22.34375%
+
+--6-y-position: 82.1484375%
+
+--7-x-position: 22.34375%
+
+--7-y-position: 82.1484375%
+
+--8-x-position: 22.34375%
+
+--8-y-position: 82.1484375%
+
+--9-x-position: 22.34375%
+
+--9-y-position: 82.1484375%
+
+--10-x-position: 22.34375%
+
+--10-y-position: 82.1484375%
+
+--11-x-position: 22.34375%
+
+--11-y-position: 82.1484375%
+
+--12-x-position: 22.34375%
+
+--12-y-position: 82.1484375%
+
+--13-x-position: 22.34375%
+
+--13-y-position: 82.1484375%
+
+--14-x-position: 15.898437500000002%
+
+--14-y-position: 86.8359375%
+
+--15-x-position: 15.898437500000002%
+
+--15-y-position: 86.8359375%
+
+--16-x-position: 80%
+
+--16-y-position: 80%
+
+--17-x-position: 78.046875%
+
+--17-y-position: 29.570312499999996%
+
+--18-x-position: 80%
+
+--18-y-position: 80%
+
+--19-x-position: 80%
+
+--19-y-position: 80%
+
+--20-x-position: 15.898437500000002%
+
+--20-y-position: 86.8359375%
+
+--21-x-position: 15.898437500000002%
+
+--21-y-position: 86.8359375%
+
+--22-x-position: 15.898437500000002%
+
+--22-y-position: 86.8359375%
+
+--23-x-position: 15.898437500000002%
+
+--23-y-position: 86.8359375%
+
+--24-x-position: 15.898437500000002%
+
+--24-y-position: 86.8359375%
+
+--25-x-position: 80%
+
+--25-y-position: 80%
+
+--26-x-position: 80%
+
+--26-y-position: 80%
+
+--27-x-position: 78.046875%
+
+--27-y-position: 29.570312499999996%
+
+--28-x-position: 80%
+
+--28-y-position: 80%
+
+--29-x-position: 21.3671875%
+
+--29-y-position: 84.296875%
+
+--30-x-position: 80%
+
+--30-y-position: 80%
+
+--31-x-position: 78.046875%
+
+--31-y-position: 29.570312499999996%
+
+--32-x-position: 80%
+
+--32-y-position: 80%
+
+--33-x-position: 21.3671875%
+
+--33-y-position: 84.296875%
+
+--34-x-position: 80%
+
+--34-y-position: 80%
+
+--35-x-position: 78.046875%
+
+--35-y-position: 29.765624999999996%
+
+--36-x-position: 80%
+
+--36-y-position: 80%
+
+--42-x-position: 21.3671875%
+
+--42-y-position: 84.296875%
+
+--43-x-position: 80%
+
+--43-y-position: 80%
+
+--44-x-position: 78.046875%
+
+--44-y-position: 29.765624999999996%
+
+--45-x-position: 80%
+
+--45-y-position: 80%
+
+--46-x-position: 26.4453125%
+
+--46-y-position: 83.90625%
+
+--47-x-position: 80%
+
+--47-y-position: 80%
+
+--48-x-position: 78.046875%
+
+--48-y-position: 29.765624999999996%
+
+--49-x-position: 80%
+
+--49-y-position: 80%
+
+--50-x-position: 26.4453125%
+
+--50-y-position: 83.90625%
+
+--51-x-position: 80%
+
+--51-y-position: 80%
+
+--52-x-position: 82.34375%
+
+--52-y-position: 24.101562499999996%
+
+--53-x-position: 80%
+
+--53-y-position: 80%
+
+--54-x-position: 26.4453125%
+
+--54-y-position: 83.90625%
+
+--55-x-position: 80%
+
+--55-y-position: 80%
+
+--56-x-position: 82.34375%
+
+--56-y-position: 24.101562499999996%
+
+--57-x-position: 23.750000000000004%
+
+--57-y-position: 20.234375000000004%
+
+--58-x-position: 26.4453125%
+
+--58-y-position: 83.90625%
+
+--59-x-position: 80%
+
+--59-y-position: 80%
+
+--60-x-position: 82.34375%
+
+--60-y-position: 24.101562499999996%
+
+--61-x-position: 17.304687500000004%
+
+--61-y-position: 58.71093750000001%
+
+--62-x-position: 26.4453125%
+
+--62-y-position: 83.90625%
+
+--63-x-position: 80%
+
+--63-y-position: 80%
+
+--64-x-position: 82.34375%
+
+--64-y-position: 24.101562499999996%
+
+--65-x-position: 26.289062500000004%
+
+--65-y-position: 27.851562500000004%
+
+--66-x-position: 26.4453125%
+
+--66-y-position: 83.90625%
+
+--67-x-position: 76.875%
+
+--67-y-position: 84.4921875%
+
+--68-x-position: 82.34375%
+
+--68-y-position: 24.101562499999996%
+
+--69-x-position: 26.289062500000004%
+
+--69-y-position: 27.851562500000004%
+
+--70-x-position: 26.4453125%
+
+--70-y-position: 83.90625%
+
+--71-x-position: 76.875%
+
+--71-y-position: 84.4921875%
+
+--72-x-position: 76.2890625%
+
+--72-y-position: 27.031249999999996%
+
+--73-x-position: 26.289062500000004%
+
+--73-y-position: 27.851562500000004%
+
+}
+
+
+@keyframes main { 25% {--70-x-position: 15%;--70-y-position: 15%;--71-x-position: 100%;--71-y-position: 100%;--71-x-position: 100%;--71-y-position: 100%;--72-x-position: 85%;--72-y-position: 80%;--72-x-position: 100%;--72-y-position: 100%;--73-x-position: 100%;--73-y-position: 100%;--73-x-position: 100%;--73-y-position: 100%;}50% {--70-x-position: 100%;--70-y-position: 100%;--71-x-position: 20%;--71-y-position: 20%;--72-x-position: 15%;--72-y-position: 85%;--73-x-position: 20%;--73-y-position: 20%;}70% {--70-x-position: 100%;--70-y-position: 100%;} }

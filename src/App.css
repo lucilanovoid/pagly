@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+.font-syne {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-syne-medium {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-syne-bold {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.lining {
+  font-variant-numeric: lining-nums;
+}
+
+.shape-grain-overlay {
+  position: absolute;
+  inset: 0;
+  bottom: 0;
+  height: 90%;
+  background: url("/img/noisy-background.png") center center / cover no-repeat;
+  opacity: 0.1;
+  pointer-events: none;
+}

@@ -312,3 +312,29 @@ transition-timing-function: ease-in
 
 
 @keyframes main { 25% {--70-x-position: 15%;--70-y-position: 15%;--71-x-position: 100%;--71-y-position: 100%;--71-x-position: 100%;--71-y-position: 100%;--72-x-position: 85%;--72-y-position: 80%;--72-x-position: 100%;--72-y-position: 100%;--73-x-position: 100%;--73-y-position: 100%;--73-x-position: 100%;--73-y-position: 100%;}50% {--70-x-position: 100%;--70-y-position: 100%;--71-x-position: 20%;--71-y-position: 20%;--72-x-position: 15%;--72-y-position: 85%;--73-x-position: 20%;--73-y-position: 20%;}70% {--70-x-position: 100%;--70-y-position: 100%;} }
+
+.header-logo {
+  transition: transform 0.3s ease;
+}
+.header-logo:hover {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+
+.font-outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-outfit-medium {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}

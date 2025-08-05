@@ -9,11 +9,13 @@ export const Header = () => (
         style={{ fontFamily: "Syne" }}
         className="font-syne-bold text-2xl text-[#115835]"
       >
-        <img
-          src="./img/Pagly_White-LOGO.svg"
-          alt="Logo Pagly"
-          className="h-18 w-auto"
-        />
+        <a href="#home">
+          <img
+            src="./img/Pagly_White-LOGO.svg"
+            alt="Logo Pagly"
+            className="h-18 w-auto header-logo"
+          />
+        </a>
       </div>
 
       {/* Enlace “Contacto” */}
@@ -22,7 +24,7 @@ export const Header = () => (
         className="relative group inline-block px-4 py-2"
         style={{ fontFamily: "Syne" }}
       >
-        <span className="font-syne-medium absolute -left-1 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out text-[#ededed] text-lg">
+        <span className="font-syne-medium absolute -left-[-0.5rem] top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 ease-in-out text-[#ededed] text-lg">
           &gt;
         </span>
         <span className="inline-block text-xl text-[#ededed] transform transition-transform duration-200 group-hover:translate-x-2 font-syne-medium">
